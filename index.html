@@ -1,0 +1,1774 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌸 Corea 2026</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#ec6e91">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Corea 2026">
+<link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect width='180' height='180' fill='%23fdd0dd' rx='40'/><text x='50%25' y='58%25' font-size='110' text-anchor='middle' dominant-baseline='middle'>🌸</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Gowun+Dodum&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<style>
+:root {
+  --pink-50:  #fff5f7;
+  --pink-100: #ffe7ee;
+  --pink-200: #fdd0dd;
+  --pink-300: #f9b6c8;
+  --pink-400: #f594ac;
+  --pink-500: #ec6e91;
+  --pink-700: #b94468;
+  --sky-50:   #f0f8fc;
+  --sky-100:  #dceefa;
+  --sky-200:  #bcdef3;
+  --sky-300:  #94c9e9;
+  --sky-500:  #4e9fd0;
+  --cream:    #fffaf3;
+  --milk:     #fdf6ee;
+  --ink:      #3a2a36;
+  --ink-soft: #6b5868;
+  --muted:    #9d8a96;
+  --gold:     #d4a574;
+  --mint:     #cfeae0;
+  --lilac:    #e8dcf4;
+  --serif: 'Fraunces', Georgia, serif;
+  --korean: 'Gowun Dodum', sans-serif;
+  --hand: 'Nanum Pen Script', cursive;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--korean);
+  background:
+    radial-gradient(circle at 15% 10%, var(--pink-100) 0%, transparent 45%),
+    radial-gradient(circle at 85% 30%, var(--sky-100) 0%, transparent 50%),
+    radial-gradient(circle at 50% 80%, var(--lilac) 0%, transparent 40%),
+    var(--cream);
+  background-attachment: fixed;
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+/* Grain texture overlay */
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: .35;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
+
+/* ==================== HERO ==================== */
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+  position: relative;
+}
+.hero .flags {
+  font-size: 28px; letter-spacing: 8px; margin-bottom: 16px;
+}
+.hero h1 {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(48px, 9vw, 96px);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  color: var(--ink);
+}
+.hero h1 .accent {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--pink-500);
+  display: inline-block;
+}
+.hero .korean {
+  font-family: var(--hand);
+  font-size: 28px;
+  color: var(--pink-700);
+  margin-top: 6px;
+}
+.hero .sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 19px;
+  color: var(--ink-soft);
+  margin-top: 18px;
+  font-weight: 300;
+}
+.hero .dates {
+  margin-top: 28px;
+  font-size: 14px;
+  color: var(--ink-soft);
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8px 22px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(252, 199, 215, 0.5);
+  border-radius: 999px;
+}
+.hero .dates span { white-space: nowrap; }
+.hero .dates .dot { color: var(--pink-300); }
+
+/* Countdown */
+.countdown {
+  margin: 28px auto 0;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(252, 199, 215, 0.4);
+  border-radius: 24px;
+  padding: 18px;
+  font-family: var(--serif);
+}
+.countdown-label {
+  font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--ink-soft); margin-bottom: 10px;
+}
+.countdown-row { display: flex; justify-content: center; gap: 14px; }
+.countdown-cell {
+  text-align: center; min-width: 60px;
+}
+.countdown-cell .num {
+  font-family: var(--serif);
+  font-size: 36px; font-weight: 500;
+  color: var(--pink-500); line-height: 1;
+}
+.countdown-cell .lbl {
+  font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--ink-soft); margin-top: 4px;
+}
+
+/* ==================== SECTIONS ==================== */
+section { padding: 60px 0; position: relative; }
+.section-title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(28px, 5vw, 42px);
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.section-title .num {
+  font-family: var(--hand);
+  font-size: 0.7em;
+  color: var(--pink-400);
+  margin-right: 10px;
+  font-style: normal;
+}
+.section-kicker {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 16px;
+  margin-bottom: 36px;
+  font-weight: 300;
+}
+
+/* ==================== TABS ==================== */
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  border-bottom: 1px dashed rgba(185, 68, 104, 0.2);
+  padding-bottom: 14px;
+}
+.tab {
+  font-family: var(--korean);
+  font-size: 14px;
+  padding: 8px 18px;
+  background: transparent;
+  border: 1px solid rgba(185, 68, 104, 0.15);
+  border-radius: 999px;
+  cursor: pointer;
+  color: var(--ink-soft);
+  transition: all 0.2s ease;
+}
+.tab:hover {
+  background: var(--pink-50);
+  color: var(--ink);
+}
+.tab.active {
+  background: var(--pink-500);
+  color: white;
+  border-color: var(--pink-500);
+  box-shadow: 0 4px 14px rgba(236, 110, 145, 0.3);
+}
+.tab .ko { font-family: var(--hand); margin-left: 6px; opacity: .7; }
+
+/* ==================== CITY PANEL ==================== */
+.city { display: none; animation: fadeIn 0.4s ease; }
+.city.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+.city-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: end;
+  border-bottom: 1px solid rgba(185, 68, 104, 0.15);
+  padding-bottom: 24px;
+  margin-bottom: 30px;
+}
+.city-header h2 {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(38px, 6vw, 56px);
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  line-height: 1;
+}
+.city-header h2 .ko {
+  font-family: var(--hand);
+  font-size: 0.55em;
+  color: var(--pink-500);
+  display: block;
+  margin-top: 6px;
+  letter-spacing: 0;
+}
+.city-header .meta {
+  text-align: right;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+.city-header .meta strong {
+  font-style: normal;
+  font-weight: 500;
+  color: var(--pink-700);
+  font-size: 18px;
+  display: block;
+}
+
+/* ==================== ALOJAMIENTO ==================== */
+.lodging {
+  background: linear-gradient(135deg, rgba(255, 231, 238, 0.6) 0%, rgba(220, 238, 250, 0.5) 100%);
+  border: 1px solid rgba(252, 199, 215, 0.5);
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin-bottom: 28px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 18px;
+  align-items: center;
+}
+.lodging .icon {
+  font-size: 28px;
+  width: 52px; height: 52px;
+  background: white;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 2px 10px rgba(236, 110, 145, 0.15);
+}
+.lodging .info .title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 19px;
+  color: var(--ink);
+}
+.lodging .info .sub {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+.lodging .map-btn {
+  font-family: var(--korean);
+  font-size: 13px;
+  padding: 8px 16px;
+  background: white;
+  border: 1px solid var(--pink-200);
+  border-radius: 999px;
+  color: var(--pink-700);
+  text-decoration: none;
+  transition: all .2s;
+  white-space: nowrap;
+}
+.lodging .map-btn:hover {
+  background: var(--pink-500); color: white; border-color: var(--pink-500);
+}
+
+/* ==================== DAY CARDS ==================== */
+.day {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(252, 199, 215, 0.35);
+  border-radius: 22px;
+  padding: 24px 26px;
+  margin-bottom: 18px;
+  transition: transform .3s, box-shadow .3s;
+}
+.day:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(236, 110, 145, 0.08);
+}
+.day-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  padding-bottom: 14px;
+  border-bottom: 1px dashed rgba(185, 68, 104, 0.18);
+}
+.day-number {
+  font-family: var(--hand);
+  font-size: 32px;
+  color: var(--pink-400);
+  line-height: 1;
+}
+.day-date {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--ink);
+}
+.day-tag {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 13px;
+  color: var(--ink-soft);
+  background: var(--milk);
+  padding: 3px 12px;
+  border-radius: 999px;
+  margin-left: auto;
+}
+.day-tag.highlight {
+  background: var(--pink-100);
+  color: var(--pink-700);
+}
+
+.timeblock {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px dotted rgba(185, 68, 104, 0.12);
+}
+.timeblock:last-child { border-bottom: none; }
+.timeblock .time {
+  font-family: var(--serif);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--pink-500);
+}
+.timeblock .time .hours {
+  display: block;
+  font-family: var(--korean);
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 2px;
+}
+.timeblock .content {
+  font-size: 15px;
+  color: var(--ink);
+}
+.timeblock .content .activity {
+  font-weight: 500;
+  display: inline;
+}
+.timeblock .content .note {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-soft);
+  display: block;
+  margin-top: 4px;
+}
+
+.transport {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(185, 68, 104, 0.15);
+  font-size: 13px;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--serif);
+  font-style: italic;
+}
+.transport .icon { font-style: normal; }
+
+/* ==================== PLACES OF INTEREST ==================== */
+.places-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+.place-cluster {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(252, 199, 215, 0.35);
+  border-radius: 18px;
+  padding: 20px;
+  transition: transform .25s;
+}
+.place-cluster:hover { transform: translateY(-3px); }
+.place-cluster h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.place-cluster .near {
+  font-family: var(--hand);
+  font-size: 17px;
+  color: var(--pink-500);
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+.place-cluster ul { list-style: none; }
+.place-cluster li {
+  font-size: 14px;
+  color: var(--ink);
+  padding: 6px 0;
+  border-top: 1px dotted rgba(185, 68, 104, 0.1);
+  display: flex; align-items: flex-start; gap: 8px;
+}
+.place-cluster li:first-of-type { border-top: none; }
+.place-cluster li::before {
+  content: '🌸';
+  font-size: 11px;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.place-cluster.busan li::before { content: '🌊'; }
+.place-cluster.jeju li::before { content: '🍊'; }
+.place-cluster.gyeongju li::before { content: '🏯'; }
+.place-cluster li a {
+  color: inherit;
+  text-decoration: none;
+}
+.place-cluster li a:hover { color: var(--pink-500); }
+
+/* ==================== LOGISTICS ==================== */
+.logi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.logi-card {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(252, 199, 215, 0.4);
+  border-radius: 18px;
+  padding: 22px;
+}
+.logi-card .icon {
+  font-size: 28px; margin-bottom: 8px;
+}
+.logi-card h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 17px;
+  margin-bottom: 8px;
+  color: var(--ink);
+}
+.logi-card p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+.logi-card .pill {
+  display: inline-block;
+  background: var(--pink-100);
+  color: var(--pink-700);
+  font-size: 11px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  margin-top: 8px;
+  font-family: var(--serif);
+}
+
+/* ==================== FOOD ==================== */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
+}
+.food-card {
+  background: linear-gradient(135deg, var(--milk) 0%, rgba(255, 231, 238, 0.4) 100%);
+  border-radius: 20px;
+  padding: 22px;
+  border: 1px solid rgba(252, 199, 215, 0.3);
+}
+.food-card .city-tag {
+  font-family: var(--hand);
+  font-size: 22px;
+  color: var(--pink-500);
+  margin-bottom: 8px;
+}
+.food-card .dish {
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.food-card .desc {
+  font-size: 14px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+}
+
+/* ==================== CHECKLIST ==================== */
+.check-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+}
+.check-block {
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(252, 199, 215, 0.4);
+  border-radius: 20px;
+  padding: 22px 24px;
+}
+.check-block h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--ink);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed rgba(185, 68, 104, 0.15);
+}
+.check-block label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--ink);
+  transition: color .2s;
+}
+.check-block label:hover { color: var(--pink-700); }
+.check-block input[type="checkbox"] {
+  appearance: none;
+  width: 18px; height: 18px;
+  border: 1.5px solid var(--pink-300);
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-top: 2px;
+  position: relative;
+  transition: all .2s;
+}
+.check-block input[type="checkbox"]:checked {
+  background: var(--pink-500);
+  border-color: var(--pink-500);
+}
+.check-block input[type="checkbox"]:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px; font-weight: bold;
+}
+.check-block input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+
+/* ==================== TIPS ==================== */
+.tips {
+  background: linear-gradient(135deg, rgba(220, 238, 250, 0.5) 0%, rgba(232, 220, 244, 0.4) 100%);
+  border: 1px solid rgba(148, 201, 233, 0.3);
+  border-radius: 24px;
+  padding: 30px 32px;
+}
+.tips h4 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.tips .tip {
+  padding: 14px 0;
+  border-bottom: 1px dashed rgba(185, 68, 104, 0.12);
+}
+.tips .tip:last-child { border-bottom: none; }
+.tips .tip-label {
+  font-family: var(--hand);
+  font-size: 19px;
+  color: var(--pink-500);
+  margin-right: 8px;
+  display: inline-block;
+}
+.tips .tip p {
+  font-size: 14px;
+  color: var(--ink-soft);
+  margin-top: 4px;
+}
+
+/* ==================== MAP LINK ==================== */
+.maplink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--sky-500);
+  text-decoration: none;
+  margin-left: 8px;
+  padding: 2px 10px;
+  border: 1px solid var(--sky-200);
+  border-radius: 999px;
+  background: white;
+  transition: all .2s;
+  white-space: nowrap;
+}
+.maplink:hover {
+  background: var(--sky-100);
+  color: var(--ink);
+}
+
+/* ==================== FOOTER ==================== */
+footer {
+  text-align: center;
+  padding: 60px 20px 40px;
+  border-top: 1px dashed rgba(185, 68, 104, 0.15);
+  margin-top: 40px;
+}
+footer .heart {
+  font-family: var(--hand);
+  font-size: 28px;
+  color: var(--pink-500);
+  margin-bottom: 8px;
+}
+footer p {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 14px;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 640px) {
+  .lodging { grid-template-columns: 1fr; text-align: center; }
+  .lodging .map-btn { justify-self: center; }
+  .timeblock { grid-template-columns: 80px 1fr; gap: 10px; }
+  .city-header { grid-template-columns: 1fr; }
+  .city-header .meta { text-align: left; }
+}
+</style>
+</head>
+<body>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+  <div class="flags">🇺🇾 ✈️ 🇰🇷</div>
+  <h1>Corea <span class="accent">2026</span></h1>
+  <div class="korean">대한민국 ✿ 봄 여행 2026</div>
+  <p class="sub">Quince días entre palacios, cafés y luces de neón</p>
+  <div class="dates">
+    <span>✈️ Vie 15 May</span>
+    <span class="dot">·</span>
+    <span>🏠 Vuelta Dom 31 May</span>
+    <span class="dot">·</span>
+    <span>🛂 Itaewon · Jeju · Busan · Gyeongju</span>
+  </div>
+
+  <div id="offline-badge" style="display:none; margin-top:16px; padding:6px 16px; background:var(--mint); color:var(--ink); border-radius:999px; font-family:var(--serif); font-style:italic; font-size:13px; align-items:center; gap:6px; border:1px solid rgba(0,0,0,0.05);">
+    🌐 Modo offline · contenido cacheado
+  </div>
+
+  <div class="countdown">
+    <div class="countdown-label">Falta · Until departure</div>
+    <div class="countdown-row" id="countdown">
+      <div class="countdown-cell"><div class="num" id="cd-days">—</div><div class="lbl">días</div></div>
+      <div class="countdown-cell"><div class="num" id="cd-hours">—</div><div class="lbl">horas</div></div>
+      <div class="countdown-cell"><div class="num" id="cd-mins">—</div><div class="lbl">min</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== RESUMEN ==================== -->
+<section class="wrap" id="resumen">
+  <h2 class="section-title"><span class="num">i.</span>Resumen</h2>
+  <p class="section-kicker">Tres semanas, cuatro ciudades, una nena recorriendo el K-mundo entero.</p>
+
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-city="seoul1">Seúl S1<span class="ko">서울</span></button>
+    <button class="tab" data-city="jeju">Jeju<span class="ko">제주</span></button>
+    <button class="tab" data-city="busan">Busan<span class="ko">부산</span></button>
+    <button class="tab" data-city="gyeongju">Gyeongju<span class="ko">경주</span></button>
+    <button class="tab" data-city="seoul2">Seúl S2-3<span class="ko">서울</span></button>
+  </div>
+
+  <!-- ============= SEOUL 1 ============= -->
+  <div class="city active" data-city="seoul1">
+    <div class="city-header">
+      <div>
+        <h2>Seúl <em style="font-style:italic;font-weight:300;color:var(--ink-soft);">— Semana 1</em>
+          <span class="ko">서울 · primera parada</span>
+        </h2>
+      </div>
+      <div class="meta">
+        <strong>6 noches</strong>
+        Vie 15 — Jue 21 May
+      </div>
+    </div>
+
+    <div class="lodging">
+      <div class="icon">🏠</div>
+      <div class="info">
+        <div class="title">Airbnb · Itaewon</div>
+        <div class="sub">Base para toda la estadía en Seúl · la dirección exacta en coreano va en la carpeta de respaldo físico</div>
+      </div>
+      <a class="map-btn" href="https://maps.google.com/?q=Itaewon,+Seoul" target="_blank">🗺️ Zona</a>
+    </div>
+
+    <!-- DÍA Llegada -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 1-2</div>
+        <div class="day-date">Vie 15 — Sáb 16 May · Llegada</div>
+        <div class="day-tag">Arribo · Incheon</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">✈️<span class="hours">tarde/noche</span></div>
+        <div class="content">
+          <span class="activity">Arribo a Incheon (ICN)</span>
+          <span class="note">Activar eSIM Yesim (perfil "CoreaLu", roaming activado). Comprar T-Money en 7-Eleven del aeropuerto. Tren AREX Express → Seoul Station.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🏠<span class="hours">noche</span></div>
+        <div class="content">
+          <span class="activity">Check-in Airbnb (Itaewon)</span>
+          <span class="note">Descansar. Caminar 5 min para un primer kimbap o ramyeon en 7-Eleven y dormir.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🌸<span class="hours">sáb 16</span></div>
+        <div class="content">
+          <span class="activity">Día buffer · jet lag</span>
+          <span class="note">Día tranquilo para resetear: pasear por Itaewon, primer Olive Young, almuerzo coreano de prueba. Si el cuerpo aguanta, paseo a Banpo al atardecer.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DOMINGO 17 -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 3</div>
+        <div class="day-date">Dom 17 May · Palacios</div>
+        <div class="day-tag highlight">Imperdible</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🏯 mañana<span class="hours">9–13h</span></div>
+        <div class="content">
+          <span class="activity">Gyeongbokgung + Changdeokgung</span>
+          <a class="maplink" href="https://maps.google.com/?q=Gyeongbokgung" target="_blank">📍 Gyeongbok</a>
+          <a class="maplink" href="https://maps.google.com/?q=Changdeokgung" target="_blank">📍 Changdeok</a>
+          <span class="note">Llegar a Gyeongbokgung ~10am para el cambio de guardia. Domingo = ambos abiertos (Changdeok cierra lunes, Gyeongbok martes). Si vas con hanbok la entrada es gratis.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🌿 tarde<span class="hours">13–18h</span></div>
+        <div class="content">
+          <span class="activity">Bukchon Hanok Village + Librería Prince</span>
+          <a class="maplink" href="https://maps.google.com/?q=Bukchon+Hanok+Village" target="_blank">📍 Bukchon</a>
+          <span class="note">Bukchon es plano por arriba, caminada tranquila entre las casas tradicionales. La librería Prince (Y &amp; Anima) está en 서울 종로구 윤보선길 31 — buscar en Naver Map.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🍶 noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">Insadong · cena tradicional</span>
+          <span class="note">Té coreano + bibimbap o bossam. Insadong es la zona ideal para esa primera cena coreana "oficial".</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">🚇</span>Metro Seúl — bajar en Anguk (Línea 3) para Bukchon, Gyeongbokgung (Línea 3) para palacio.</div>
+    </div>
+
+    <!-- LUNES 18 -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 4</div>
+        <div class="day-date">Lun 18 May · Myeongdong</div>
+        <div class="day-tag">K-Beauty</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">💄 mañana<span class="hours">9–13h</span></div>
+        <div class="content">
+          <span class="activity">Beauty Play (Myeongdong, piso 3) + Berry New Pharmacy</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.5642938,126.9861857" target="_blank">📍 Beauty Play</a>
+          <a class="maplink" href="https://maps.google.com/?q=37.5629206,126.9845561" target="_blank">📍 Berry New</a>
+          <span class="note">Beauty Play está en 명동길 73, piso 3. Probar productos gratis. En Berry New comprás cosmética y suplementos sin las marketinadas de Olive Young.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🎀 tarde<span class="hours">13–18h</span></div>
+        <div class="content">
+          <span class="activity">Hello Kitty Apple Café + Shopping</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.5626124,126.9844789" target="_blank">📍 Hello Kitty</a>
+          <span class="note">Café temático en Myeongdong. Después: Daiso main, Olive Young flagship, Artbox (papelería/stickers). Tax Free inmediato en estas 3 con pasaporte físico.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🌃 noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">Namsan Tower (N Seoul Tower) + Myeongdong Night Market</span>
+          <a class="maplink" href="https://maps.google.com/?q=N+Seoul+Tower" target="_blank">📍 Namsan</a>
+          <span class="note">Subir al atardecer y bajar al night market. Lunes tiene puestos pero menos variedad que domingo — si quedaron con ganas el dom 17, era para ir.</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">🚶</span>Todo Myeongdong se hace caminando. Estación: Myeongdong (Línea 4).</div>
+    </div>
+
+    <!-- MARTES 19 -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 5</div>
+        <div class="day-date">Mar 19 May · Mangwon + Hongdae</div>
+        <div class="day-tag">Cultura joven</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">💆 mañana<span class="hours">9–13h</span></div>
+        <div class="content">
+          <span class="activity">Off Beauty (Mangwon)</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.5615511,126.9841895" target="_blank">📍 Off Beauty Mangwon</a>
+          <span class="note">Dirección: 서울 마포구 월드컵로14길 37. Marca de cosmética independiente coreana.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🥟 tarde<span class="hours">13–18h</span></div>
+        <div class="content">
+          <span class="activity">Mangwon Market</span>
+          <span class="note">Mercado tradicional menos turístico que Gwangjang. Hotteok, tteokbokki, croquetas de papa. Comer al paso, sin tabúes.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🎤 noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">T1 Base Camp (Hongdae) + paseo nocturno</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.5560392,126.9222982" target="_blank">📍 T1 Base Camp</a>
+          <span class="note">T1 está en 양화로 147. Después caminar Hongdae — calle peatonal de músicos en vivo, papelería Artbox, tiendas K-pop.</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">🚇</span>Línea 6 (Mangwon) → Línea 2 (Hongik Univ.) para Hongdae.</div>
+    </div>
+
+    <!-- MIÉRCOLES 20 - MBC -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 6</div>
+        <div class="day-date">Mié 20 May · K-Pop Day</div>
+        <div class="day-tag highlight">MBC Show Champion ⭐</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🌅 mañana<span class="hours">9–13h</span></div>
+        <div class="content">
+          <span class="activity">Día reservado al show — horario aún sin confirmar</span>
+          <span class="note">⚠️ No hay horario exacto del MBC Show Champion ni se sabe cuántas horas durará. Día entero bloqueado para esto + ida y vuelta a Goyang (Ilsan, noroeste de Seúl). No planificar nada más por encima.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🎬 tarde<span class="hours">13–18h</span></div>
+        <div class="content">
+          <span class="activity">MBC Show Champion · MBC Dream Center, Goyang</span>
+          <span class="note">Llevar pasaporte físico (a veces lo piden). Cargar batería y comer antes — adentro pueden ser varias horas sin moverte. Confirmar horario y procedimiento con el fanclub / organizador en los días previos.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">☕ noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">Cena de relax en Seongsu-dong</span>
+          <a class="maplink" href="https://maps.google.com/?q=Café+Onion+Seongsu" target="_blank">📍 Onion</a>
+          <a class="maplink" href="https://maps.google.com/?q=Daelim+Changgo" target="_blank">📍 Daelim Changgo</a>
+          <span class="note">Café Onion o Daelim Changgo (galería-café en almacén antiguo). Seongsu = Brooklyn de Seúl. Cierre tranquilo después del día largo.</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">🚇</span>A Goyang: Línea 3 hasta Daehwa o tren ITX desde Seoul Station. Verificar el día anterior.</div>
+    </div>
+  </div>
+
+  <!-- ============= JEJU ============= -->
+  <div class="city" data-city="jeju">
+    <div class="city-header">
+      <div>
+        <h2>Jeju
+          <span class="ko">제주도 · isla del cerdo negro</span>
+        </h2>
+      </div>
+      <div class="meta">
+        <strong>1 noche</strong>
+        Jue 21 — Vie 22 May
+      </div>
+    </div>
+
+    <div class="lodging">
+      <div class="icon">🏨</div>
+      <div class="info">
+        <div class="title">Hotel en Jeju City</div>
+        <div class="sub">Cerca del Mercado Dongmun y Yongduam · habitaciones simples con desayuno y parking</div>
+      </div>
+      <a class="map-btn" href="https://maps.google.com/?q=Jeju+City,+Jeju+Island" target="_blank">🗺️ Zona</a>
+    </div>
+
+    <!-- JUEVES 21 -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 7</div>
+        <div class="day-date">Jue 21 May · Llegada Jeju</div>
+        <div class="day-tag highlight">Costa Oeste</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">✈️ mañana<span class="hours">9–13h</span></div>
+        <div class="content">
+          <span class="activity">Vuelo Gimpo → Jeju (~1h 10m) <em style="color:var(--pink-500); font-style:italic;">· horario a confirmar</em></span>
+          <span class="note">Aerolínea low-cost a definir (Jeju Air / Jin Air / T'way). Salida desde Gimpo, no Incheon — es el aeropuerto doméstico, más céntrico. Llegar 1.5h antes una vez se compre el vuelo.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🏖️ tarde<span class="hours">13–18h</span></div>
+        <div class="content">
+          <span class="activity">Hyeopjae Beach + Café hopping en Aewol</span>
+          <span class="note">Hyeopjae = playa de arena blanca con aguas turquesas vista de la isla volcánica de Biyangdo. Aewol = costa con cafés frente al mar (es donde está el café de GD, "Monsant", entre otros).</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🍖 noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">Cerdo Negro en Mercado Dongmun</span>
+          <a class="maplink" href="https://maps.google.com/?q=33.5115889,126.5261829" target="_blank">📍 Dongmun Market</a>
+          <span class="note">Heuk-dwaeji (cerdo negro) — la carne icónica de Jeju. Dongmun Market también tiene mandarinas de Jeju, mariscos y postres locales. A pasos del hotel.</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">🚗</span>Auto de alquiler en Jeju o taxi/bus. Naver Map en Jeju funciona mejor que Google.</div>
+    </div>
+
+    <!-- VIERNES 22 -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 8</div>
+        <div class="day-date">Vie 22 May · Costa Este → Busan</div>
+        <div class="day-tag">Día denso</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🌋 mañana<span class="hours">9–13h</span></div>
+        <div class="content">
+          <span class="activity">Manjanggul Cave + Seongsan Ilchulbong</span>
+          <span class="note">Manjanggul = tubo de lava (Patrimonio UNESCO). Seongsan = el "pico del amanecer", cráter volcánico al borde del mar. Subir lleva 30 min, las vistas son de las mejores de Corea.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🌾 tarde<span class="hours">13–18h</span></div>
+        <div class="content">
+          <span class="activity">Seopjikoji + vuelo a Busan</span>
+          <span class="note">Seopjikoji = acantilados con la capilla de "All In" K-drama. Después: aeropuerto de Jeju, vuelo a Busan (~1h). Calcular bien con el check-out del hotel.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🎆 noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">Playa Gwangalli (Busan)</span>
+          <a class="maplink" href="https://maps.google.com/?q=Playa+Gwangalli" target="_blank">📍 Gwangalli</a>
+          <span class="note">Llegada a Busan. Cena con vista al puente Gwangan iluminado. Los sábados hay show de drones a las 20h, pero verificar viernes también.</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">✈️</span>Vuelo Jeju (CJU) → Busan (PUS) · ~1h · horario a confirmar · muchas frecuencias diarias.</div>
+    </div>
+  </div>
+
+  <!-- ============= BUSAN ============= -->
+  <div class="city" data-city="busan">
+    <div class="city-header">
+      <div>
+        <h2>Busan
+          <span class="ko">부산 · playa + templo + sopa</span>
+        </h2>
+      </div>
+      <div class="meta">
+        <strong>2 noches</strong>
+        Vie 22 — Dom 24 May
+      </div>
+    </div>
+
+    <div class="lodging">
+      <div class="icon">🏨</div>
+      <div class="info">
+        <div class="title">Hotel en Seomyeon (Busan)</div>
+        <div class="sub">Centro de Busan · conexión metro · habitaciones simples con parking (con costo)</div>
+      </div>
+      <a class="map-btn" href="https://maps.google.com/?q=Seomyeon,+Busan" target="_blank">🗺️ Zona</a>
+    </div>
+
+    <!-- SÁBADO 23 -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 9</div>
+        <div class="day-date">Sáb 23 May · Busan completa</div>
+        <div class="day-tag highlight">Imperdible</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🎨 mañana<span class="hours">9–13h</span></div>
+        <div class="content">
+          <span class="activity">Gamcheon Culture Village</span>
+          <a class="maplink" href="https://maps.google.com/?q=35.0973904,129.0105924" target="_blank">📍 Gamcheon</a>
+          <span class="note">El "Santorini coreano" — pueblo en la ladera con casitas pintadas. Muy fotogénico, varias subidas y bajadas (calzado cómodo). 2-3h alcanza.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">⛩️ tarde<span class="hours">13–18h</span></div>
+        <div class="content">
+          <span class="activity">Templo Haedong Yonggungsa</span>
+          <a class="maplink" href="https://maps.google.com/?q=35.1884543,129.2231109" target="_blank">📍 Haedong</a>
+          <span class="note">Único templo budista de Corea construido al borde del mar. Vistas espectaculares. En metro: Línea 2 hasta Haeundae + bus 181.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🍜 noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">Cena en Seomyeon Food Alley</span>
+          <a class="maplink" href="https://maps.google.com/?q=35.1558452,129.0584293" target="_blank">📍 Seomyeon Food Alley</a>
+          <span class="note">Dwaeji Gukbap (sopa de cerdo con arroz) — el plato típico de Busan. También: ssiat hotteok (panqueque dulce de semillas) en Nampo.</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">🚇</span>Metro Busan + buses locales. T-Money funciona acá igual que en Seúl.</div>
+    </div>
+  </div>
+
+  <!-- ============= GYEONGJU ============= -->
+  <div class="city" data-city="gyeongju">
+    <div class="city-header">
+      <div>
+        <h2>Gyeongju
+          <span class="ko">경주 · paseo de un día</span>
+        </h2>
+      </div>
+      <div class="meta">
+        <strong>Day trip</strong>
+        Dom 24 May · ida y vuelta
+      </div>
+    </div>
+
+    <div class="lodging" style="background: linear-gradient(135deg, rgba(220,238,250,.5) 0%, rgba(232,220,244,.4) 100%);">
+      <div class="icon">🚄</div>
+      <div class="info">
+        <div class="title">Sin alojamiento · ida y vuelta en el día</div>
+        <div class="sub">Salida temprano desde Busan en KTX · regreso a Seúl en KTX de la tarde-noche · la noche de vuelta es en el Airbnb de Itaewon</div>
+      </div>
+      <a class="map-btn" href="https://maps.google.com/?q=35.8447433,129.206998" target="_blank">🗺️ Maps</a>
+    </div>
+
+    <!-- DOMINGO 24 - DÍA COMPLETO -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 10</div>
+        <div class="day-date">Dom 24 May · Gyeongju en un día</div>
+        <div class="day-tag highlight">Día denso</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🚄 temprano<span class="hours">~8–10h</span></div>
+        <div class="content">
+          <span class="activity">KTX Busan → Singyeongju (~30 min)</span>
+          <span class="note">Salir lo antes posible para tener el día completo. ⚠️ Domingo de retorno a Seúl tiene mucha demanda local — boletos del KTX comprados 30 días antes en KorailTalk (este día tiene ida + vuelta a Seúl). Bus o taxi desde Singyeongju al centro histórico (15-20 min).</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">⛩️ mañana<span class="hours">10–13h</span></div>
+        <div class="content">
+          <span class="activity">Templo Bulguksa + Seokguram Grotto</span>
+          <a class="maplink" href="https://maps.google.com/?q=Bulguksa+Temple" target="_blank">📍 Bulguksa</a>
+          <a class="maplink" href="https://maps.google.com/?q=35.7916875,129.3498125" target="_blank">📍 Seokguram</a>
+          <span class="note">Bulguksa = Patrimonio UNESCO, uno de los templos más importantes de Corea. Si coincide con el cumpleaños de Buda, todo lleno de linternas. Seokguram (la gruta con el Buda tallado) está cerca y se suele combinar — opcional según tiempo.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🏯 tarde<span class="hours">13–17h</span></div>
+        <div class="content">
+          <span class="activity">Centro histórico · Túmulos + Cheomseongdae + Puente Woljeonggyo</span>
+          <a class="maplink" href="https://maps.google.com/?q=35.8347306,129.2190014" target="_blank">📍 Cheomseongdae</a>
+          <span class="note">Los túmulos son tumbas reales de la dinastía Silla (parecen colinas perfectas). Cheomseongdae = observatorio astronómico del siglo VII. Puente Woljeonggyo iluminado de cara al atardecer. Todo en zona caminable.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🍞 tarde<span class="hours">17–18h</span></div>
+        <div class="content">
+          <span class="activity">Hwanglidan-gil · merienda + Hwangnam-ppang</span>
+          <span class="note">Calle "instagrameable" de Gyeongju, cafés en casas hanok. Hwangnam-ppang = pan relleno de pasta de frijol rojo (el souvenir clásico). Llevar una cajita para la vuelta.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🚄 noche<span class="hours">~18–21h</span></div>
+        <div class="content">
+          <span class="activity">KTX Singyeongju → Seúl (~2h)</span>
+          <span class="note">Volver con calma. Llegada a Seoul Station y metro/taxi al Airbnb en Itaewon. Cena tranquila al llegar o algo rápido en la zona.</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">🚄</span>Día con 2 tramos de KTX (Busan→Gyeongju ida y Gyeongju→Seúl vuelta). Ambos boletos comprados con anticipación.</div>
+    </div>
+  </div>
+
+  <!-- ============= SEOUL 2-3 ============= -->
+  <div class="city" data-city="seoul2">
+    <div class="city-header">
+      <div>
+        <h2>Seúl <em style="font-style:italic;font-weight:300;color:var(--ink-soft);">— Semanas 2-3</em>
+          <span class="ko">서울 · cierre y compras</span>
+        </h2>
+      </div>
+      <div class="meta">
+        <strong>7 noches</strong>
+        Dom 24 — Dom 31 May
+      </div>
+    </div>
+
+    <div class="lodging">
+      <div class="icon">🏠</div>
+      <div class="info">
+        <div class="title">Airbnb · Itaewon (vuelta a la base)</div>
+        <div class="sub">Misma base que la primera semana · la noche del dom 24 también es acá (volvés en KTX desde Gyeongju)</div>
+      </div>
+      <a class="map-btn" href="https://maps.google.com/?q=Itaewon,+Seoul" target="_blank">🗺️ Zona</a>
+    </div>
+
+    <!-- LUNES 25 - LIBRE -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 11</div>
+        <div class="day-date">Lun 25 May · Día buffer</div>
+        <div class="day-tag">Descanso</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">😴 mañana<span class="hours">flex</span></div>
+        <div class="content">
+          <span class="activity">Descanso post-Gyeongju · desayuno tranquilo</span>
+          <span class="note">Después del KTX domingo + día denso, este día se merece arrancar lento. Aprovechar para una caminata por Itaewon, mercado coreano local, o cafetería de barrio.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🛍️ tarde<span class="hours">flex</span></div>
+        <div class="content">
+          <span class="activity">Tarde flexible · usar para reprogramar lo que faltó</span>
+          <span class="note">Día comodín. Algunas ideas: si quedó pendiente Gwangjang Market, Ikseon-dong, alguna visita de la primera semana, o simplemente caminar Han River y café.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🌙 noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">Cena tranquila</span>
+          <span class="note">Sin agenda. Si hay energía: noraebang (karaoke privado) por la zona del Airbnb.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MARTES 26 -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 12</div>
+        <div class="day-date">Mar 26 May · MiniCars + Gangnam</div>
+        <div class="day-tag highlight">RECUPERADO</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🏎️ mañana<span class="hours">9–13h</span></div>
+        <div class="content">
+          <span class="activity">MiniCars Shop (Yongsan I'Park Mall)</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.4992898,127.0435398" target="_blank">📍 MiniCars</a>
+          <span class="note">Piso 3 (301호) del edificio Noblesse cerca de salida 3 de estación Yeoksam. Es difícil de ver desde la calle — buscar el edificio Noblesse. Paraíso de los autitos.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🏙️ tarde<span class="hours">13–18h</span></div>
+        <div class="content">
+          <span class="activity">Gangnam + Starfield Library (COEX)</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.5100586,127.0601188" target="_blank">📍 Starfield</a>
+          <span class="note">Starfield Library = la biblioteca con paredes de libros gigantes del COEX Mall (la fotaza). Después: paseo Gangnam, cafés.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🌃 noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">Cena en Gangnam</span>
+          <span class="note">Korean BBQ premium o cocina más fusion. Volver al Airbnb cómoda en taxi (es caro pero ok).</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">🚇</span>Línea 2 (Gangnam) y Línea 2 (Samseong para COEX).</div>
+    </div>
+
+    <!-- MIÉRCOLES 27 -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 13</div>
+        <div class="day-date">Mié 27 May · Libre + Banpo</div>
+        <div class="day-tag highlight">RECUPERADO</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🛍️ mañana<span class="hours">9–13h</span></div>
+        <div class="content">
+          <span class="activity">Día libre · shopping final stickers / papelería</span>
+          <span class="note">Recorrer Hongdae o volver a Artbox Myeongdong. Día de "ya sé qué me gustó, ahora compro de verdad".</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">💆 tarde<span class="hours">13–18h</span></div>
+        <div class="content">
+          <span class="activity">Spa, jjimjilbang o café tranquilo</span>
+          <span class="note">Día de descanso bien ganado. Considerar un jjimjilbang (sauna coreano) — Dragon Hill Spa es el más conocido en Yongsan.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🌈 noche<span class="hours">18h+</span></div>
+        <div class="content">
+          <span class="activity">Banpo Floating Island · show de luces nocturno</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.5116807,126.9947194" target="_blank">📍 Floating Island</a>
+          <span class="note">Show del puente Banpo Bridge — las fuentes arcoíris al lado del Río Han. Horarios varían (típicamente 20-21h en mayo). Llevar campera para el viento del río.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- JUEVES 28 - LOTTE -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 14</div>
+        <div class="day-date">Jue 28 May · Lotte World</div>
+        <div class="day-tag highlight">Día completo</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🎢 todo el día<span class="hours">9h+</span></div>
+        <div class="content">
+          <span class="activity">Lotte World Adventure (con Magic Pass)</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.5111158,127.098167" target="_blank">📍 Lotte World</a>
+          <span class="note">Magic Pass activado en la app Lotte World Adventure (la habilitaste en la app antes de viajar). Parque indoor + outdoor. Llegar al abrir, salir cuando se ponga muy lleno o sigan hasta el cierre.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🏬 noche<span class="hours">cierre</span></div>
+        <div class="content">
+          <span class="activity">Lotte Tower + Seokchon Lake Park</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.5124641,127.102543" target="_blank">📍 Lotte Tower</a>
+          <span class="note">Si quedan pilas: subir al Seoul Sky (mirador de Lotte Tower) o caminar el lago Seokchon iluminado al lado.</span>
+        </div>
+      </div>
+      <div class="transport"><span class="icon">🚇</span>Línea 2 / 8 — estación Jamsil (salida 4).</div>
+    </div>
+
+    <!-- VIE 29 a DOM 31 -->
+    <div class="day">
+      <div class="day-header">
+        <div class="day-number">Día 15-17</div>
+        <div class="day-date">Vie 29 — Dom 31 May · Cierre</div>
+        <div class="day-tag">Despedida</div>
+      </div>
+      <div class="timeblock">
+        <div class="time">☕ vie 29<span class="hours">flexible</span></div>
+        <div class="content">
+          <span class="activity">Cafés pendientes · Seongsu / Ikseon-dong</span>
+          <a class="maplink" href="https://maps.google.com/?q=Cheongsudang+Bakery+Ikseon" target="_blank">📍 Cheongsudang</a>
+          <span class="note">Si quedó pendiente Cheongsudang (el café-bosque con linternas en Ikseon-dong), este es el día. También Onion Seongsu si no fueron el día del MBC.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🥢 sáb 30<span class="hours">flexible</span></div>
+        <div class="content">
+          <span class="activity">Gwangjang Market + Ikseon-dong</span>
+          <a class="maplink" href="https://maps.google.com/?q=37.5700398,126.9996036" target="_blank">📍 Gwangjang</a>
+          <span class="note">Bindae-tteok (tortitas de buey) y Mayak Kimbap ("kimbap adicto"). Última visita a Ikseon-dong, el barrio hanok modernizado.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">🧳 sáb 30<span class="hours">noche</span></div>
+        <div class="content">
+          <span class="activity">Preparación de valijas + check Tax Free</span>
+          <span class="note">Verificar tickets de Tax Free en los productos comprados (los del Olive Young / Daiso ya tienen descuento). Para Tax Free Refund: los stands están en Incheon antes de migraciones.</span>
+        </div>
+      </div>
+      <div class="timeblock">
+        <div class="time">✈️ dom 31<span class="hours">17h</span></div>
+        <div class="content">
+          <span class="activity">Traslado AREX Express → Incheon</span>
+          <span class="note">Tren AREX desde Seoul Station — 43-50 min. Llegar 3h antes del vuelo internacional. Check-out del Airbnb con horario flexible (chequear con host).</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LUGARES DE INTERÉS ==================== -->
+<section class="wrap" id="lugares">
+  <h2 class="section-title"><span class="num">ii.</span>Lugares marcados en el mapa</h2>
+  <p class="section-kicker">Pines del My Maps agrupados por barrio · proximidad con las actividades del itinerario · si quedan minutos libres, sumar.</p>
+
+  <h3 style="font-family:var(--serif); font-weight:400; font-size:24px; margin-top:30px; margin-bottom:18px; color:var(--ink);">🇰🇷 Seúl <span style="font-family:var(--hand); color:var(--pink-500); font-size:18px;">서울</span></h3>
+  <div class="places-grid">
+
+    <div class="place-cluster">
+      <h4>Myeongdong</h4>
+      <div class="near">⤷ se cruzan con: Lun 18 (K-Beauty Day)</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=37.5642938,126.9861857" target="_blank">Beauty Play Myeongdong</a></li>
+        <li><a href="https://maps.google.com/?q=37.5629206,126.9845561" target="_blank">Berry New Pharmacy</a></li>
+        <li><a href="https://maps.google.com/?q=37.5615511,126.9841895" target="_blank">Off Beauty Myeongdong</a></li>
+        <li><a href="https://maps.google.com/?q=37.5626124,126.9844789" target="_blank">Hello Kitty Apple Café</a></li>
+        <li><a href="https://maps.google.com/?q=37.5511694,126.9882266" target="_blank">N Seoul Tower (Namsan)</a></li>
+        <li><a href="https://maps.google.com/?q=37.5616685,126.9858438" target="_blank">Myeongdong Night Market</a></li>
+        <li><a href="https://maps.google.com/?q=37.5639197,126.984624" target="_blank">Daiso Myeongdong Main</a></li>
+        <li><a href="https://maps.google.com/?q=37.5607507,126.9866775" target="_blank">Daiso Myeongdong Station</a></li>
+        <li><a href="https://maps.google.com/?q=37.563946,126.9851624" target="_blank">Olive Young Myeongdong</a></li>
+        <li><a href="https://maps.google.com/?q=37.5621572,126.9855973" target="_blank">Artbox Myeongdong</a></li>
+        <li><a href="https://maps.google.com/?q=37.5648102,126.9811036" target="_blank">UNIQLO Lotte Myeongdong</a></li>
+        <li><a href="https://maps.google.com/?q=37.5641503,126.9816366" target="_blank">Nike Myeongdong</a></li>
+        <li><a href="https://maps.google.com/?q=37.5620904,126.9858205" target="_blank">ABC Mart Continental</a></li>
+      </ul>
+    </div>
+
+    <div class="place-cluster">
+      <h4>Bukchon · Insadong · Jongno</h4>
+      <div class="near">⤷ se cruzan con: Dom 17 (Palacios)</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=37.579617,126.977041" target="_blank">Gyeongbokgung</a></li>
+        <li><a href="https://maps.google.com/?q=37.5794309,126.9910426" target="_blank">Palacio Changdeokgung</a></li>
+        <li><a href="https://maps.google.com/?q=37.5814696,126.9849519" target="_blank">Bukchon Hanok Village</a></li>
+        <li><a href="https://maps.google.com/?q=37.5773023,126.9836998" target="_blank">Tienda "Belleza Verdadera" K-drama</a></li>
+        <li><a href="https://maps.google.com/?q=37.5737132,126.9901271" target="_blank">Ikseon-dong Hanok Village</a></li>
+        <li><a href="https://maps.google.com/?q=37.5700398,126.9996036" target="_blank">Gwangjang Market</a></li>
+      </ul>
+    </div>
+
+    <div class="place-cluster">
+      <h4>Hongdae · Mangwon</h4>
+      <div class="near">⤷ se cruzan con: Mar 19</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=37.5509235,126.9214659" target="_blank">Beauty Play Hongdae</a></li>
+        <li><a href="https://maps.google.com/?q=37.5560392,126.9222982" target="_blank">T1 Base Camp</a></li>
+      </ul>
+    </div>
+
+    <div class="place-cluster">
+      <h4>Seongsu-dong</h4>
+      <div class="near">⤷ se cruzan con: Mié 20 (post-MBC)</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=37.5450538,127.0507776" target="_blank">Off Beauty Seongsu Megafactory</a></li>
+        <li><a href="https://maps.google.com/?q=37.5415196,127.0592971" target="_blank">NYU NYU</a></li>
+      </ul>
+    </div>
+
+    <div class="place-cluster">
+      <h4>Gangnam · Yeoksam · COEX</h4>
+      <div class="near">⤷ se cruzan con: Mar 26 (MiniCars + Starfield)</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=37.4992898,127.0435398" target="_blank">MiniCars Shop (Yeoksam)</a></li>
+        <li><a href="https://maps.google.com/?q=37.5100586,127.0601188" target="_blank">Starfield Library (COEX)</a></li>
+        <li><a href="https://maps.google.com/?q=37.52939,126.9650925" target="_blank">I'Park Mall (Yongsan)</a></li>
+      </ul>
+    </div>
+
+    <div class="place-cluster">
+      <h4>Jamsil · Lotte</h4>
+      <div class="near">⤷ se cruzan con: Jue 28 (Lotte World)</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=37.5111158,127.098167" target="_blank">Lotte World Adventure</a></li>
+        <li><a href="https://maps.google.com/?q=37.5124641,127.102543" target="_blank">Lotte World Tower (Seoul Sky)</a></li>
+        <li><a href="https://maps.google.com/?q=37.5113096,127.1051525" target="_blank">Seokchon Lake Park</a></li>
+        <li><a href="https://maps.google.com/?q=37.5121692,127.0993026" target="_blank">Lotte Department Store Jamsil</a></li>
+      </ul>
+    </div>
+
+    <div class="place-cluster">
+      <h4>Banpo · Río Han</h4>
+      <div class="near">⤷ se cruzan con: Mié 27 (show de luces)</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=37.5116807,126.9947194" target="_blank">Floating Island Convention</a></li>
+        <li><a href="https://maps.google.com/?q=37.5178474,126.9695823" target="_blank">Río Han · zona Banpo</a></li>
+      </ul>
+    </div>
+
+    <div class="place-cluster">
+      <h4>Itaewon · Yongsan</h4>
+      <div class="near">⤷ base · Airbnb en la zona</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=Itaewon,+Seoul" target="_blank">Zona del Airbnb (Itaewon)</a></li>
+        <li><a href="https://maps.google.com/?q=37.52939,126.9650925" target="_blank">I'Park Mall (Yongsan)</a></li>
+      </ul>
+    </div>
+
+    <div class="place-cluster">
+      <h4>Suwon (Lotte Mall)</h4>
+      <div class="near">⤷ excursión de día si sobra tiempo · 1h al sur de Seúl</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=37.2640396,126.9970839" target="_blank">Lotte Mall Suwon</a></li>
+        <li><a href="https://maps.google.com/?q=37.2875616,126.9912753" target="_blank">Fun Square</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="font-family:var(--serif); font-weight:400; font-size:24px; margin-top:40px; margin-bottom:18px; color:var(--ink);">🍊 Jeju <span style="font-family:var(--hand); color:var(--pink-500); font-size:18px;">제주도</span></h3>
+  <div class="places-grid">
+    <div class="place-cluster jeju">
+      <h4>Jeju City (alrededor del hotel)</h4>
+      <div class="near">⤷ caminable desde el hotel</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=Jeju+City" target="_blank">Zona del hotel (Jeju City) 🏨</a></li>
+        <li><a href="https://maps.google.com/?q=33.5115889,126.5261829" target="_blank">Dongmun Market (cerdo negro)</a></li>
+        <li><a href="https://maps.google.com/?q=33.5157583,126.5116346" target="_blank">Yongduam Rock (formación de lava)</a></li>
+      </ul>
+    </div>
+    <div class="place-cluster jeju">
+      <h4>Centro / Sur de Jeju</h4>
+      <div class="near">⤷ excursión si hay tiempo entre días</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=33.3616666,126.5291666" target="_blank">Hallasan (volcán)</a></li>
+        <li><a href="https://maps.google.com/?q=33.3059438,126.289437" target="_blank">Osulloc Tea Museum</a></li>
+        <li><a href="https://maps.google.com/?q=33.2754779,126.6786632" target="_blank">Jeju Camellia Arboretum</a></li>
+      </ul>
+    </div>
+    <div class="place-cluster jeju">
+      <h4>Este de Jeju</h4>
+      <div class="near">⤷ se cruzan con: Vie 22 AM (Costa Este)</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=33.4441972,126.7783058" target="_blank">Snoopy Garden 🐶</a></li>
+        <li><a href="https://maps.google.com/?q=33.5236474,126.8634357" target="_blank">Jeju Haenyeo Museum (mujeres buceadoras)</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3 style="font-family:var(--serif); font-weight:400; font-size:24px; margin-top:40px; margin-bottom:18px; color:var(--ink);">🌊 Busan + Gyeongju <span style="font-family:var(--hand); color:var(--pink-500); font-size:18px;">부산 · 경주</span></h3>
+  <div class="places-grid">
+    <div class="place-cluster busan">
+      <h4>Seomyeon (centro Busan)</h4>
+      <div class="near">⤷ caminable desde el hotel</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=Seomyeon,+Busan" target="_blank">Zona del hotel (Seomyeon) 🏨</a></li>
+        <li><a href="https://maps.google.com/?q=35.1558452,129.0584293" target="_blank">Seomyeon Food Alley</a></li>
+      </ul>
+    </div>
+    <div class="place-cluster busan">
+      <h4>Costa de Busan</h4>
+      <div class="near">⤷ se cruzan con: Vie 22 noche + Sáb 23</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=35.1531696,129.118666" target="_blank">Playa Gwangalli (show de drones)</a></li>
+        <li><a href="https://maps.google.com/?q=35.0973904,129.0105924" target="_blank">Gamcheon Culture Village</a></li>
+        <li><a href="https://maps.google.com/?q=35.1884543,129.2231109" target="_blank">Haedong Yonggungsa (templo del mar)</a></li>
+      </ul>
+    </div>
+    <div class="place-cluster gyeongju">
+      <h4>Gyeongju histórica</h4>
+      <div class="near">⤷ se cruzan con: Dom 24 + Lun 25</div>
+      <ul>
+        <li><a href="https://maps.google.com/?q=35.8447433,129.206998" target="_blank">Centro de Gyeongju (túmulos)</a></li>
+        <li><a href="https://maps.google.com/?q=35.8347306,129.2190014" target="_blank">Cheomseongdae (observatorio s. VII)</a></li>
+        <li><a href="https://maps.google.com/?q=35.7916875,129.3498125" target="_blank">Seokguram Grotto (UNESCO)</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== LOGÍSTICA Y CONECTIVIDAD ==================== -->
+<section class="wrap" id="logistica">
+  <h2 class="section-title"><span class="num">iii.</span>Logística y conectividad</h2>
+  <p class="section-kicker">Lo técnico — seguros, eSIM, KTX, vuelos internos. Configurado y validado.</p>
+
+  <div class="logi-grid">
+    <div class="logi-card">
+      <div class="icon">🛡️</div>
+      <h4>Seguro · Universal Assistance (Zurich)</h4>
+      <p>Plan Exclusive. Asistencia médica USD 500.000 · preexistencias USD 30.000 · Beneficio VIP Delay activo.</p>
+      <span class="pill">Voucher impreso</span>
+    </div>
+    <div class="logi-card">
+      <div class="icon">📱</div>
+      <h4>eSIM · Yesim "CoreaLu"</h4>
+      <p>Datos ilimitados. Activar "Roaming de Datos" al aterrizar en Incheon. Backup Global para escalas disponible en la app.</p>
+      <span class="pill">QR en respaldo físico</span>
+    </div>
+    <div class="logi-card">
+      <div class="icon">🚄</div>
+      <h4>KTX (Tren bala)</h4>
+      <p>Busan → Gyeongju (24/05, ~30 min) y Gyeongju → Seúl (25/05, ~2h). Boletos en app KorailTalk. Domingo de retorno = comprar con 30 días de anticipación.</p>
+      <span class="pill">Comprados ✓</span>
+    </div>
+    <div class="logi-card">
+      <div class="icon">✈️</div>
+      <h4>Vuelos internos · a confirmar</h4>
+      <p>Seúl Gimpo → Jeju (21/05, ~1h 10m). Jeju → Busan (22/05, ~1h). Aerolíneas low-cost a evaluar: Jeju Air, Jin Air, T'way.</p>
+      <span class="pill">Salen desde Gimpo, no Incheon</span>
+    </div>
+    <div class="logi-card">
+      <div class="icon">💳</div>
+      <h4>T-Money</h4>
+      <p>Tarjeta de transporte. Compra en cualquier 7-Eleven o CU al llegar. Sirve metro y bus en TODO el país (Seúl, Jeju, Busan). Mantener ~100.000 KRW.</p>
+      <span class="pill">Recargar en estaciones</span>
+    </div>
+    <div class="logi-card">
+      <div class="icon">🗺️</div>
+      <h4>Naver Maps + Papago + KakaoTalk</h4>
+      <p>Google Maps NO funciona bien en Corea. Naver es el equivalente local. Papago = traductor (mejor que Google Translate para coreano). KakaoTalk = WhatsApp coreano (algunos lugares lo piden para login).</p>
+      <span class="pill">Instaladas antes de viajar</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== COMIDA ==================== -->
+<section class="wrap" id="comida">
+  <h2 class="section-title"><span class="num">iv.</span>Comida imperdible</h2>
+  <p class="section-kicker">Por ciudad · lo que no se puede dejar pasar.</p>
+
+  <div class="food-grid">
+    <div class="food-card">
+      <div class="city-tag">🍊 Jeju · 21/05</div>
+      <div class="dish">Cerdo Negro · Heuk-dwaeji</div>
+      <p class="desc">La carne más famosa de la isla. Buscar en zona Seogwipo o cerca del aeropuerto. Acompañar con mandarinas de Jeju (en jugo o postres).</p>
+    </div>
+    <div class="food-card">
+      <div class="city-tag">🌊 Busan · 22-23/05</div>
+      <div class="dish">Dwaeji Gukbap + Ssiat Hotteok</div>
+      <p class="desc">Dwaeji Gukbap = sopa de cerdo con arroz, clásico reconfortante en Seomyeon. Ssiat Hotteok = panqueque dulce de semillas, en zona Nampo.</p>
+    </div>
+    <div class="food-card">
+      <div class="city-tag">🏯 Gyeongju · 24/05</div>
+      <div class="dish">Hwangnam-ppang</div>
+      <p class="desc">Pan de Gyeongju relleno de pasta de frijol rojo dulce. Las cajitas se ven por todos lados — el souvenir clásico para llevar a casa.</p>
+    </div>
+    <div class="food-card">
+      <div class="city-tag">🌸 Seúl · Gwangjang Market</div>
+      <div class="dish">Bindae-tteok + Mayak Kimbap</div>
+      <p class="desc">Tortitas de buey (Bindae-tteok) y Mayak Kimbap (kimbap "adicto" — el nombre lo dice todo).</p>
+    </div>
+    <div class="food-card">
+      <div class="city-tag">☕ Seongsu-dong</div>
+      <div class="dish">Cafés aesthetic</div>
+      <p class="desc">Daelim Changgo (galería/café en almacén antiguo) y Onion Seongsu. La vibra "Brooklyn coreano".</p>
+    </div>
+    <div class="food-card">
+      <div class="city-tag">☕ Ikseon-dong</div>
+      <div class="dish">Cheongsudang</div>
+      <p class="desc">Café que parece un bosque con linternas y agua. Muy instagrameable. Llegar antes de las 12 si no querés cola.</p>
+    </div>
+    <div class="food-card">
+      <div class="city-tag">☕ Gwangalli (Busan)</div>
+      <div class="dish">Café con vista al show de drones</div>
+      <p class="desc">Cualquier café en pisos altos frente al mar. Matcha + show de luces nocturno = combo perfecto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== COMPRAS Y TAX FREE ==================== -->
+<section class="wrap" id="compras">
+  <h2 class="section-title"><span class="num">v.</span>Compras y Tax Free</h2>
+
+  <div class="tips" style="background: linear-gradient(135deg, rgba(255,231,238,.5) 0%, rgba(220,238,250,.4) 100%);">
+    <div class="tip">
+      <span class="tip-label">Tax Free inmediato</span>
+      <p>Presentar pasaporte físico en Daiso, Olive Young y Artbox → descuento aplicado en caja. No hay que tramitarlo en el aeropuerto. Verificar que el ticket diga "Tax Free" y guardarlo.</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">Tax Free Refund (en el aeropuerto)</span>
+      <p>Para compras grandes (electrónica, ropa de marca), llevar el producto sin abrir + el ticket Tax Free. Hay kioscos de devolución en Incheon antes de migraciones. Llegar con tiempo (3h antes del vuelo).</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">Presupuesto sugerido de bolsillo</span>
+      <p>USD 1.800 para cubrir comidas, transporte local y la debilidad por los stickers / MiniCars. Mayor parte en T-Money + algo de efectivo para mercados tradicionales (Gwangjang, Mangwon, Dongmun).</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">Efectivo en T-Money</span>
+      <p>Mantener ~100.000 KRW (≈75 USD) en la tarjeta T-Money. Se recarga en cualquier estación de metro y en 7-Eleven / CU.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CHECKLIST ==================== -->
+<section class="wrap" id="checklist">
+  <h2 class="section-title"><span class="num">vi.</span>Checklist · respaldo físico</h2>
+  <p class="section-kicker">Lo que tiene que estar en la carpeta de mano · doble check antes de salir.</p>
+
+  <div class="check-grid">
+    <div class="check-block">
+      <h4>📄 Documentos</h4>
+      <label><input type="checkbox"><span>Pasaporte vigente</span></label>
+      <label><input type="checkbox"><span>K-ETA aprobada (impresa)</span></label>
+      <label><input type="checkbox"><span>Voucher Seguro Exclusive (impreso)</span></label>
+      <label><input type="checkbox"><span>Copia de pasaporte (digital + papel)</span></label>
+      <label><input type="checkbox"><span>Certificado médico + constancia MSP (medicación habitual)</span></label>
+      <label><input type="checkbox"><span>Dirección del Airbnb en coreano (para taxis)</span></label>
+      <label><input type="checkbox"><span>Tickets de vuelo (en app + impresos)</span></label>
+      <label><input type="checkbox"><span>Tarjeta de crédito con cobertura internacional</span></label>
+    </div>
+
+    <div class="check-block">
+      <h4>📱 Apps y digital</h4>
+      <label><input type="checkbox"><span>Naver Maps (instalada)</span></label>
+      <label><input type="checkbox"><span>Papago (traductor)</span></label>
+      <label><input type="checkbox"><span>KakaoTalk (chat / logins)</span></label>
+      <label><input type="checkbox"><span>KorailTalk (boletos KTX)</span></label>
+      <label><input type="checkbox"><span>Lotte World Adventure (Magic Pass)</span></label>
+      <label><input type="checkbox"><span>QR Yesim eSIM / datos activación</span></label>
+      <label><input type="checkbox"><span>Yesim app instalada</span></label>
+      <label><input type="checkbox"><span>Google Maps con mapas offline de Seúl/Jeju/Busan</span></label>
+    </div>
+
+    <div class="check-block">
+      <h4>🧳 Equipaje</h4>
+      <label><input type="checkbox"><span>Adaptador enchufe tipo C/F (corea usa los europeos)</span></label>
+      <label><input type="checkbox"><span>Power bank cargado</span></label>
+      <label><input type="checkbox"><span>Medicamentos personales + botiquín</span></label>
+      <label><input type="checkbox"><span>Protector solar (mayo en Corea = sol fuerte)</span></label>
+      <label><input type="checkbox"><span>Calzado cómodo (mucha caminata)</span></label>
+      <label><input type="checkbox"><span>Campera liviana para noches</span></label>
+      <label><input type="checkbox"><span>Paraguas compacto</span></label>
+      <label><input type="checkbox"><span>Bolsa extra para compras</span></label>
+    </div>
+
+    <div class="check-block">
+      <h4>💰 Dinero</h4>
+      <label><input type="checkbox"><span>USD ~1.800 (efectivo + tarjeta)</span></label>
+      <label><input type="checkbox"><span>Cambio inicial: ~200.000 KRW en efectivo</span></label>
+      <label><input type="checkbox"><span>Tarjeta sin comisión por compra exterior</span></label>
+      <label><input type="checkbox"><span>App del banco con notificaciones activadas</span></label>
+      <label><input type="checkbox"><span>Avisar al banco las fechas del viaje</span></label>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TIPS FINALES ==================== -->
+<section class="wrap" id="tips">
+  <h2 class="section-title"><span class="num">vii.</span>Tips de último momento</h2>
+
+  <div class="tips">
+    <div class="tip">
+      <span class="tip-label">Los Palacios cierran días distintos</span>
+      <p>Changdeokgung (el del Jardín Secreto) cierra los <strong>lunes</strong>. Gyeongbokgung cierra los <strong>martes</strong>. Domingo 17 = ambos abiertos ✓. Llegar a Gyeongbok ~10am para el cambio de guardia.</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">KTX domingo 24 = comprar YA</span>
+      <p>Domingo de retorno a Seúl tiene mucha demanda local. Boletos KTX Gyeongju → Seúl se compran apenas se habilitan (30 días antes) en KorailTalk. Sin esto, te quedás sin lugar.</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">MiniCars Shop · piso 3 escondido</span>
+      <p>301호 (piso 3) en edificio "Noblesse" cerca de salida 3 de estación Yeoksam. Difícil de ver desde la calle — buscar Noblesse, no MiniCars.</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">Cumpleaños de Buda en mayo</span>
+      <p>Suele caer a mediados/finales de mayo. Si coincide, los templos (especialmente Gyeongju, Bulguksa, Seúl) están llenos de linternas de colores — una de las experiencias visuales más lindas del año.</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">Myeongdong Night Market</span>
+      <p>Lunes 18 hay puestos pero menos variedad. Domingo 17 más completo — si quedan energías después de los palacios, vale el rato.</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">Naver Map, no Google</span>
+      <p>Google Maps en Corea es limitado (el gobierno no exporta data de mapeo completa). Naver = mucho mejor para rutas en metro, ubicaciones exactas y horarios.</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">Hallasan sendero corto · no requiere reserva</span>
+      <p>El sendero Eoseungsaengak (corto, accesible) no necesita reserva previa. Solo los que suben a la cima sí. Tarde libre para cascadas (Jeongbang) o columnas de lava (Jusangjeolli).</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">Vuelos baratos: Jeju Air, Jin Air, T'way</span>
+      <p>Para los tramos Seúl-Jeju-Busan, las low-cost coreanas son confiables y económicas. Reservar con anticipación = precios mucho mejores.</p>
+    </div>
+    <div class="tip">
+      <span class="tip-label">Direcciones útiles en coreano (para taxis)</span>
+      <p>
+        Librería Prince: 서울 종로구 윤보선길 31<br>
+        T1 Base Camp: 서울 마포구 양화로 147<br>
+        Beauty Play: 서울 중구 명동길 73 (piso 3)<br>
+        Off Beauty: 서울 마포구 월드컵로14길 37<br>
+        Lotte World Mall: 서울 송파구 올림픽로 300
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="heart">¡Buen viaje! 🌸</div>
+  <p>Sistema listo para el despegue · QA Passed · v4 Reconciliada</p>
+  <p style="margin-top:8px; font-size:12px;">대한민국에서 즐거운 시간 보내세요</p>
+</footer>
+
+<script>
+// Tabs
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    const city = t.dataset.city;
+    document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.city').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    document.querySelector(`.city[data-city="${city}"]`).classList.add('active');
+    // scroll into view smoothly on mobile
+    document.getElementById('resumen').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+
+// Countdown to 15/05/2026
+function updateCountdown() {
+  const target = new Date('2026-05-15T21:00:00-03:00'); // approx departure
+  const now = new Date();
+  const diff = target - now;
+  if (diff <= 0) {
+    document.getElementById('cd-days').textContent = '0';
+    document.getElementById('cd-hours').textContent = '0';
+    document.getElementById('cd-mins').textContent = '0';
+    document.querySelector('.countdown-label').textContent = '¡Ya estás viajando! 🌸';
+    return;
+  }
+  const days = Math.floor(diff / (1000*60*60*24));
+  const hours = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+  const mins = Math.floor((diff % (1000*60*60)) / (1000*60));
+  document.getElementById('cd-days').textContent = days;
+  document.getElementById('cd-hours').textContent = hours;
+  document.getElementById('cd-mins').textContent = mins;
+}
+updateCountdown();
+setInterval(updateCountdown, 60000);
+
+// Persist checklist
+document.querySelectorAll('.check-block input[type="checkbox"]').forEach((cb, i) => {
+  const key = 'corea-check-' + i;
+  // Note: localStorage may not be available in artifacts, so wrap in try-catch
+  try {
+    if (localStorage.getItem(key) === '1') cb.checked = true;
+    cb.addEventListener('change', () => {
+      try { localStorage.setItem(key, cb.checked ? '1' : '0'); } catch (e) {}
+    });
+  } catch (e) {}
+});
+
+// ==================== SERVICE WORKER (offline) ====================
+if ('serviceWorker' in navigator && location.protocol !== 'file:') {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => console.log('🌸 Service Worker activo — sitio disponible offline'))
+      .catch(err => console.log('SW falló (probablemente file://):', err));
+  });
+}
+
+// ==================== OFFLINE INDICATOR ====================
+function updateOnlineStatus() {
+  const badge = document.getElementById('offline-badge');
+  if (!navigator.onLine) {
+    badge.style.display = 'inline-flex';
+  } else {
+    badge.style.display = 'none';
+  }
+}
+window.addEventListener('online', updateOnlineStatus);
+window.addEventListener('offline', updateOnlineStatus);
+updateOnlineStatus();
+</script>
+
+</body>
+</html>

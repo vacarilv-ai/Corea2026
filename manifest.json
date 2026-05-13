@@ -1,0 +1,26 @@
+{
+  "name": "Corea 2026",
+  "short_name": "Corea 2026",
+  "description": "Itinerario del viaje a Corea del Sur · 15-31 de mayo 2026",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fffaf3",
+  "theme_color": "#ec6e91",
+  "lang": "es-UY",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' fill='%23fdd0dd' rx='42'/><text x='50%25' y='58%25' font-size='118' text-anchor='middle' dominant-baseline='middle'>🌸</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' fill='%23fdd0dd' rx='112'/><text x='50%25' y='58%25' font-size='320' text-anchor='middle' dominant-baseline='middle'>🌸</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
